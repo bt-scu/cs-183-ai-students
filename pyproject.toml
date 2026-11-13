@@ -1,0 +1,25 @@
+[project]
+name = "CSCI-183-Final-Project"
+version = "0.1.0"
+description = "This is a dataset that will explore how AI usage impacts student GPA. It will also explore the nuances of the data set"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "torch>=2.15.0",
+    "xgboost>=3.4.1",
+]
+
+
+ [build-system]
+  requires = ["hatchling"]
+  build-backend = "hatchling.build"
+
+  [tool.hatch.build.targets.wheel]
+  packages = ["pkg"]
